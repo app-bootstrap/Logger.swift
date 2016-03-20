@@ -35,6 +35,9 @@ public class Logger {
         
     }
     
+    public init() {
+    }
+    
     public func info(items: Any..., file: String = __FILE__, line: Int = __LINE__, column: Int = __COLUMN__) {
         logger(.Info, items: items, file: file, line: line, column: column)
     }
