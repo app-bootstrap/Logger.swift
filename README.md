@@ -23,6 +23,8 @@ And then, run `carthage update --platform iOS`.
 ## Usage
 
 ```swift
+#import Logger
+
 let logger = Logger()
 logger.info("something")
 ```
