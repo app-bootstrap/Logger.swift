@@ -6,13 +6,14 @@
 //  Copyright © 2016 xdf. All rights reserved.
 //
 
-public class Formatter {
+open class Formatter {
 
-    internal func format(level level: Level, var items: [Any], file: String, line: Int, column: Int) -> String {
+    internal func format(level: Level, items: [Any], file: String, line: Int, column: Int) -> String {
+        var items = items
         let fileInfo = ">> \(level.toUpperCase) \(file):\(line):\(column)"
-        items.insert(fileInfo, atIndex: 0)
+        items.insert(fileInfo, at: 0)
         return items.map({
-            String($0)
-        }).joinWithSeparator(" ") + "\n"
+            String(describing: $0)
+        }).joined(separator: " ") + "\n"
     }
 }
