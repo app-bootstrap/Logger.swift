@@ -12,7 +12,7 @@
 
 ### Carthage
 
-You can use [Carthage](https://github.com/Carthage/Carthage) to install `Logger.swift` by adding it to your `Cartfile`:
+You can use [Carthage](//github.com/Carthage/Carthage) to install `Logger.swift` by adding it to your `Cartfile`:
 
 ```
 github "xudafeng/Logger.swift"
@@ -22,7 +22,7 @@ And then, run `carthage update --platform iOS`.
 
 ## Usage
 
-```swift
+``` swift
 #import Logger
 
 let logger = Logger()

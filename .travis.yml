@@ -1,4 +1,6 @@
-language: objective-c
-osx_image: xcode8
+language:
+  - swift
+osx_image:
+  - xcode9
 script:
   - xcodebuild -project Logger.xcodeproj -target Logger
